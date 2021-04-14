@@ -39,5 +39,5 @@ connectDB()
 app.enable('trust proxy')
 app.use(express.json());
 app.use(cors())
-app.use('/app', routerUrls)
+app.use('/api', routerUrls)
 app.listen(PORT, () => console.log(PORT, "server-up and running"))

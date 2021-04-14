@@ -38,5 +38,5 @@ connectDB()
 
 app.use(express.json());
 app.use(cors())
-app.use('/api', routerUrls)
+app.use('/app', routerUrls)
 app.listen(PORT, () => console.log("server-up and running"))

@@ -49,7 +49,7 @@ const Result = (prop) => {
   useEffect(() => {
     axios({
       method: "get",
-      url: "http://localhost:30844/app/getSurvey",
+      url: "http://localhost:" + process.env.PORT + "/app/getSurvey",
     })
       .then(function (response) {
         setSurvey(response.data)

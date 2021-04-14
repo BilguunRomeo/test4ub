@@ -23,6 +23,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
+  "homepage": "https://survey-test4ub.herokuapp.com/",
   "eslintConfig": {
     "extends": [
       "react-app",

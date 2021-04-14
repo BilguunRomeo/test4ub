@@ -25,11 +25,11 @@ const connectDB = async () => {
   }
 };
 
-connectDB()
-
 if (process.env.NODE_ENV === 'production') {
   app.use(express.static('client/build'));
 }
+
+connectDB()
 
 app.use(express.json());
 app.use(cors())

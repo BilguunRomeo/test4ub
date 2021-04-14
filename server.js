@@ -6,7 +6,6 @@ const cors = require('cors');
 const path = require('path')
 
 const app = express();
-const PORT = process.env.PORT || 5000;
 
 dotenv.config()
 
@@ -40,4 +39,4 @@ app.enable('trust proxy')
 app.use(express.json());
 app.use(cors())
 app.use('/api', routerUrls)
-app.listen(PORT, () => console.log(PORT, "server-up and running"))
+app.listen(process.env.PORT, () => console.log(process.env.PORT, "server-up and running"))

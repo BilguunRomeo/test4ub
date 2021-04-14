@@ -8,7 +8,7 @@ function SurveyOne() {
   const onCompletepage = useCallback((data) => {
     axios({
       method: "post",
-      url: "http://localhost:5000/app/sendSurvey",
+      url: "http://localhost:30844/app/sendSurvey",
       data: {
         a: data.a,
         b: data.b,

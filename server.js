@@ -5,6 +5,7 @@ const routerUrls = require('./routes/routes')
 const cors = require('cors');
 
 const app = express();
+app.use(express.static(__dirname + '/dist'));
 const PORT = process.env.PORT || 5000;
 
 dotenv.config()

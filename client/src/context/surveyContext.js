@@ -1,5 +1,4 @@
 import React, { useReducer, useEffect, createContext } from 'react';
-import SurveyApi from '../api/endpoint';
 
 //---context
 export const Context = createContext();
@@ -20,10 +19,9 @@ const SurveyProvider = props => {
   const [state, dispatch] = useReducer(stateReducer, { surveys: ' ' });
   useEffect(() => {
     async function fetchData() {
-      const res = await SurveyApi.get('/surveyquestions');
       dispatch({
         type: 'GET_SURVEY',
-        payload: res
+        payload: 'sda'
       });
     }
     return fetchData();

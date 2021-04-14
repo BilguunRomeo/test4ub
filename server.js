@@ -36,7 +36,8 @@ if (process.env.NODE_ENV === 'production') {
 
 connectDB()
 
+app.enable('trust proxy')
 app.use(express.json());
 app.use(cors())
 app.use('/app', routerUrls)
-app.listen(PORT, () => console.log("server-up and running"))
+app.listen(PORT, () => console.log(PORT, "server-up and running"))

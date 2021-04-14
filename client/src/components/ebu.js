@@ -8,7 +8,7 @@ function SurveyOne() {
   const onCompletepage = useCallback((data) => {
     axios({
       method: "post",
-      url: "http://localhost:5000/api/sendSurvey",
+      url: "https://survey-test4ub.herokuapp.com/api/sendSurvey",
       data: {
         a: data.a,
         b: data.b,

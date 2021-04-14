@@ -49,7 +49,7 @@ const Result = (prop) => {
   useEffect(() => {
     axios({
       method: "get",
-      url: "http://localhost:5000/api/getSurvey",
+      url: "https://survey-test4ub.herokuapp.com/api/getSurvey",
     })
       .then(function (response) {
         setSurvey(response.data)

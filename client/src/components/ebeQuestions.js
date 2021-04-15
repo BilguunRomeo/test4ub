@@ -62,7 +62,7 @@ export const json = {
           title: "Шинжилгээ өгөх газрыг олоход яагаад хэцүү байсан бэ?",
           hasOther: false,
           otherText: "Бусад : Бичнэ үү:",
-          visibleIf: "{f}='Тийм'",
+          visibleIf: "{f}='Үгүй'",
           isRequired: true,
           choices: ["Хаяггүй байсан", "Хол байсан", "Хөтөч байгаагүй"]
         }, {
@@ -72,12 +72,13 @@ export const json = {
           hasOther: false,
           otherText: "Тодорхойлно уу:",
           isRequired: true,
-          choices: ["Тийм (тийм бол 9 дугаар асуулт руу шилжинэ үү)", "Үгүй"]
+          choices: ["Тийм", "Үгүй"]
         }, {
           type: "radiogroup",
           name: "i",
           title: "Үйлчилгээний цагийн хуваарь ямар байвал танд тохиромжтой вэ?",
           hasOther: true,
+          visibleIf: "{i}='Үгүй'",
           otherText: "Бусад : Бичнэ үү:",
           isRequired: true,
           choices: ["Хагассайн өдөр", "Бүтэнсайн өдөр", "18 цагаас хойш"]
@@ -400,7 +401,7 @@ export const json = {
           name: "au",
           title: "Хэрвээ үйлчлүүлэхгүй бол яагаад ?",
           hasOther: true,
-          visibleIf: "{at}='Үгүй',",
+          visibleIf: "{at}='Үгүй'",
           otherText: "Бусад: Бичнэ үү",
           isRequired: true,
           choices: ["Орчин таалагдаагүй", "Эмч болон бусад ажилтны хандлага таалагдаагүй", "Байршил тохиромжгүй", "Төлбөр өндөр байсан", "Ажиллах цагийн хуваарь тохиромжгүй", "Хүлээлгийн хугацаа урт", "Нууцыг хадгалах боломж муу"]

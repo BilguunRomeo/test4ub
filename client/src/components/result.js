@@ -9,6 +9,15 @@ const Result = (prop) => {
 
   const columns = [
     {
+      name: "type",
+      label: "Төрөл",
+      options: {
+        filter: true,
+        sort: true,
+        display: true,
+      }
+    },
+    {
       name: "a",
       label: "Судлаачын дугаар",
       options: {

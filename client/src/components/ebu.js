@@ -10,6 +10,7 @@ function SurveyOne() {
       method: "post",
       url: "https://survey-test4ub.herokuapp.com/api/sendSurvey",
       data: {
+        type: 'ebu',
         a: data.a,
         b: data.b,
         c: data.c,

@@ -4,6 +4,7 @@ const surveyModel = require('../models/surveyModel')
 
 router.post('/sendSurvey', (request, response) => {
   const survey = new surveyModel({
+    type: request.body.type,
     a: request.body.a,
     b: request.body.b,
     c: request.body.c,

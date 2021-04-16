@@ -78,7 +78,7 @@ export const json = {
           name: "i",
           title: "Үйлчилгээний цагийн хуваарь ямар байвал танд тохиромжтой вэ?",
           hasOther: true,
-          visibleIf: "{i}='Үгүй'",
+          visibleIf: "{h}='Үгүй'",
           otherText: "Бусад : Бичнэ үү:",
           isRequired: true,
           choices: ["Хагассайн өдөр", "Бүтэнсайн өдөр", "18 цагаас хойш"]
@@ -276,7 +276,7 @@ export const json = {
           hasOther: false,
           otherText: "Тодорхойлно уу:",
           isRequired: true,
-          choices: ["Тийм", "Үгүй"]
+          choices: ["Маш их тав тухтай", "Тав тухтай", "Дунд зэрэг", "Муу", "Маш Муу", "Хүлээлгийн хэсэг байгаагүй"]
         }, {
           type: "radiogroup",
           name: "ag",
@@ -284,7 +284,7 @@ export const json = {
           hasOther: false,
           otherText: "Тодорхойлно уу:",
           isRequired: true,
-          choices: ["Тийм", "Үгүй"]
+          choices: ["Маш сайн", "Сайн", "Дунд зэрэг", "Муу", "Маш Муу", "Мэдэхгүй", "Бие засах газар байгаагүй"]
         }, {
           type: "radiogroup",
           name: "ah",
@@ -300,7 +300,7 @@ export const json = {
           hasOther: false,
           otherText: "Тодорхойлно уу:",
           isRequired: true,
-          choices: ["Тийм", "Үгүй"]
+          choices: ["Тийм", "Үгүй", "Би уншаагүй учраас мэдэхгүй", "Унших зүйл байгаагүй"]
         }, {
           type: "radiogroup",
           name: "aj",
@@ -360,6 +360,7 @@ export const json = {
           name: "ap",
           title: "Хэний зүгээс ялгаварлан гадуурхал, гутаан доромжлолд өртсөн бэ?",
           hasOther: true,
+          visibleIf: "{an}='Тийм'",
           otherText: "Бусад: Бичнэ үү:",
           isRequired: true,
           choices: ["Эмч", "Сувилагч", "Үйлчилгээний ажилтан", "Бусад үйлчлүүлэгч", "Хүрч очих ажилтан"]
@@ -368,6 +369,7 @@ export const json = {
           name: "aq",
           title: "Ялгаварлан гадуурхагдсан, гутаан доромжлогдсон, эсвэл сөрөг хандлагын талаар гомдол яаж гаргахаа мэдэх үү? Хэрвээ мэдэх бол ямар аргаар бичнэ үү.",
           hasOther: true,
+          visibleIf: "{an}='Тийм'",
           otherText: "Тийм, бичнэ үү:",
           isRequired: true,
           choices: ["Үгүй"]
@@ -384,7 +386,7 @@ export const json = {
           name: "as",
           title: "Хэрвээ гомдол гаргаж байсан бол таны гаргасан гомдлыг шийдсэн үү?",
           hasOther: false,
-          visibleIf: "{ar} contains 'Тийм",
+          visibleIf: "{ar}='Тийм, вэб сайтаар",
           otherText: "Тодорхойлно уу:",
           isRequired: true,
           choices: ["Тийм", "Үгүй"]

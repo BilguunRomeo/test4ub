@@ -248,7 +248,7 @@ export const json = {
         }, {
           type: "radiogroup",
           name: "ac",
-          title: "Та шинжилгээнийхаа хариуг авсан уу?",
+          title: "Та шинжилгээнийхээ хариуг авсан уу?",
           hasOther: false,
           otherText: "Тодорхойлно уу:",
           isRequired: true,
@@ -386,7 +386,7 @@ export const json = {
           name: "as",
           title: "Хэрвээ гомдол гаргаж байсан бол таны гаргасан гомдлыг шийдсэн үү?",
           hasOther: false,
-          visibleIf: "{ar}='Тийм, вэб сайтаар",
+          visibleIf: "{ar}='Тийм, вэб сайтаар' and {ar} = 'Тийм, санал хүсэлтийн хайрцгаар'",
           otherText: "Тодорхойлно уу:",
           isRequired: true,
           choices: ["Тийм", "Үгүй"]
